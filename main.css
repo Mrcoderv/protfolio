@@ -118,7 +118,7 @@ header .logo {
     border-radius: 5px;
     text-decoration: none;
     margin-top: 80px; /* Move button lower */
-    transition: background-color 0.3s, transform 0.3s; /* Added transform for scaling */
+    transition: background-color 11s, transform 11s; /* Added transform for scaling */
     animation: zoomIn 1.5s ease-in-out;
 }
 
