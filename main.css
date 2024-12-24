@@ -33,7 +33,9 @@ header {
 
 .logo-image {
     width: 60px; /* Increased for better visibility */
-    height: auto;
+      height: auto;
+    border-radius: 50%; /* Circular image */
+ 
 }
 
 header .logo {
