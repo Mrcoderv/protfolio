@@ -97,6 +97,7 @@ header .logo {
     background: rgba(0, 0, 0, 0.5); /* Dark overlay for text readability */
 }
 
+
 .hero-content h1 {
     font-size: 50px;
     animation: fadeIn 1s ease-in-out;
