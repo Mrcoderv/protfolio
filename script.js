@@ -482,3 +482,4 @@ document.addEventListener('DOMContentLoaded', function() {
     // Run on scroll to handle header height changes (e.g., .scrolled class)
     window.addEventListener('scroll', adjustHeroPadding);
 });
+  
