@@ -447,3 +447,19 @@ const counterObserver = new IntersectionObserver((entries) => {
 if (skillsSection) {
     counterObserver.observe(skillsSection);
 }
+
+
+// changing the 
+window.addEventListener('load', function() {
+    const header = document.querySelector('header');
+    const hero = document.querySelector('.hero');
+    const headerHeight = header.offsetHeight;
+    hero.style.paddingTop = (headerHeight + 20) + 'px'; // Add extra 20px for safety
+});
+
+window.addEventListener('resize', function() {
+    const header = document.querySelector('header');
+    const hero = document.querySelector('.hero');
+    const headerHeight = header.offsetHeight;
+    hero.style.paddingTop = (headerHeight + 20) + 'px';
+});
