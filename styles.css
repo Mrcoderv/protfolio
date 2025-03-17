@@ -258,7 +258,7 @@ img {
     color: var(--primary-color);
 }
 
-/* Header Styles */
+/* Ensure header is properly positioned */
 header {
     position: fixed;
     top: 0;
@@ -269,8 +269,7 @@ header {
     box-shadow: var(--shadow);
     z-index: 1000;
     transition: var(--transition);
-}
-
+} 
 header.scrolled {
     padding: 15px 0;
 }
@@ -347,16 +346,18 @@ nav {
     transition: var(--transition);
 }
 
+/* Hero Section //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 /* Hero Section */
 .hero {
-    padding: 200px 0 100px; /* Adjusted top padding */
+    padding: 100px 0 100px; /* Reduced base padding-top, will be adjusted by JS */
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 50px;
     position: relative;
-    z-index: 1;
+    z-index: 1; /* Ensure hero content is above any background elements */
 }
+
 
 .hero-content {
     flex: 1;
