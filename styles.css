@@ -1,6 +1,9 @@
 /* Base Styles */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
-
+body {
+    margin: 0 20px;  /* 0 for top/bottom, 20px for left/right */
+    padding: 0 20px; /* 0 for top/bottom, 20px for left/right */
+}
 :root {
     /* Light Theme (Default) */
     --primary-color: #2563eb;
