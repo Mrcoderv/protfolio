@@ -463,3 +463,22 @@ window.addEventListener('resize', function() {
     const headerHeight = header.offsetHeight;
     hero.style.paddingTop = (headerHeight + 20) + 'px';
 });
+// script.js
+document.addEventListener('DOMContentLoaded', function() {
+    // Function to set hero padding based on header height
+    function adjustHeroPadding() {
+        const header = document.querySelector('header');
+        const hero = document.querySelector('.hero');
+        const headerHeight = header.offsetHeight; // Get the actual height of the header
+        hero.style.paddingTop = (headerHeight + 50) + 'px'; // Add extra 50px for buffer
+    }
+
+    // Run on page load
+    adjustHeroPadding();
+
+    // Run on window resize to handle responsive changes
+    window.addEventListener('resize', adjustHeroPadding);
+
+    // Run on scroll to handle header height changes (e.g., .scrolled class)
+    window.addEventListener('scroll', adjustHeroPadding);
+});
