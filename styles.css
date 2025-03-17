@@ -349,11 +349,13 @@ nav {
 
 /* Hero Section */
 .hero {
-    padding: 180px 0 100px;
+    padding: 200px 0 100px; /* Adjusted top padding */
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 50px;
+    position: relative;
+    z-index: 1;
 }
 
 .hero-content {
@@ -376,6 +378,7 @@ nav {
     overflow: hidden;
     animation: typing 3.5s steps(30, end) 1s forwards, blink 0.75s step-end infinite;
 }
+
 
 @keyframes typing {
     from { width: 0 }
