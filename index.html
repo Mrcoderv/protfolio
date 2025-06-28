@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,14 +9,12 @@
     <meta name="keywords" content="Raghav Vian Panthi, BCA student, developer, Java, Python, JavaScript, web development, data analysis, portfolio, software development">
     <meta name="author" content="Raghav Vian Panthi">
     <meta name="robots" content="index, follow">
-    <meta name="author" content="Raghav Panthi">
-    <meta name="author" content="Raghav panthi">
     
     <!-- Open Graph Meta Tags (for social media sharing) -->
     <meta property="og:title" content="Raghav Vian Panthi - Portfolio">
     <meta property="og:description" content="Explore the portfolio of Raghav Vian Panthi, a passionate BCA student and developer showcasing skills and projects in programming and web development.">
     <meta property="og:image" content="assets/profile.jpg">
-    <meta property="og:url" content="https://yourwebsite.com"> <!-- Replace with your actual URL -->
+    <meta property="og:url" content="https://mrcoderv.github.io/protfolio/">
     <meta property="og:type" content="website">
 
     <!-- Twitter Card Meta Tags -->
@@ -26,20 +22,36 @@
     <meta name="twitter:title" content="Raghav Vian Panthi - Portfolio">
     <meta name="twitter:description" content="Portfolio of Raghav Vian Panthi, BCA student and developer. Check out my projects and skills!">
     <meta name="twitter:image" content="assets/profile.jpg">
-    <meta name="twitter:site" content="@MrRaghavpanthi"> <!-- Your Twitter handle -->
+    <meta name="twitter:site" content="@MrRaghavpanthi">
 
     <title>Raghav Vian Panthi - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Favicon -->
     <link rel="icon" href="assets/profile.jpg" type="image/icon type">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container">
-        <!-- Header Section -->
-        <header>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
             <div class="logo">
-                <h1>Raghav<span><span> </span>Panthi</span></h1>
+                <h1>Raghav<span> Panthi</span></h1>
             </div>
             <nav>
                 <ul class="nav-links">
@@ -49,6 +61,7 @@
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#education">Education</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <li><a href="pages/cv.html">CV</a></li>
                 </ul>
                 <div class="hamburger">
                     <span class="bar"></span>
@@ -56,15 +69,12 @@
                     <span class="bar"></span>
                 </div>
             </nav>
-            <div class="theme-toggle">
-                <button id="themeToggle" aria-label="Toggle dark mode">
-                    <i class="fas fa-sun"></i>
-                </button>
-            </div>
-        </header>
+        </div>
+    </header>
 
-        <!-- Hero Section -->
-        <section id="home" class="hero">
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
             <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
                 <h1>Hello, I'm <span class="typing-text">Raghav Vian Panthi</span></h1>
                 <h2>BCA Student & Developer</h2>
@@ -79,10 +89,12 @@
             <div class="hero-image" data-aos="fade-left" data-aos-duration="1000">
                 <img src="assets/profile.jpg" alt="Raghav Vian Panthi">
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- About Section -->
-        <section id="about" class="about">
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
             <div class="section-header" data-aos="fade-up">
                 <h2>About Me</h2>
                 <div class="underline"></div>
@@ -127,10 +139,12 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Skills Section -->
-        <section id="skills" class="skills">
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
             <div class="section-header" data-aos="fade-up">
                 <h2>My Skills</h2>
                 <div class="underline"></div>
@@ -247,204 +261,221 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Projects Section -->
-        <section id="projects" class="projects">
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
             <div class="section-header" data-aos="fade-up">
                 <h2>My Projects</h2>
                 <div class="underline"></div>
             </div>
-            <div class="projects-grid" id="projects-container">
-                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="project-image">
-                        <img src="assets/project1.jpg" alt="JavaFX Ball Shot Game">
-                    </div>
-                    <div class="project-info">
-                        <h3>JavaFX Ball Shot Game</h3>
-                        <p>Developed an interactive 2D Ball Shooting Game using JavaFX. Implemented game mechanics, physics, and UI elements to create an engaging experience.</p>
-                        <div class="project-tech">
-                            <span>Java</span>
-                            <span>JavaFX</span>
-                            <span>Game Development</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/Mrcoderv/JavaFXprojects/blob/main/JAVAFXExample/src/main/java/org/example/javafxdemo/GameOn.java" target="_blank" class="btn small-btn"><i class="fab fa-github"></i> GitHub</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="project-image">
-                        <img src="assets/Project2.jpg" alt="Guess Game">
-                    </div>
-                    <div class="project-info">
-                        <h3>Guess Game (IntelliJ)</h3>
-                        <p>Built a number guessing game (1-100) in JavaFX using IntelliJ, incorporating logic for random number generation and user interaction.</p>
-                        <div class="project-tech">
-                            <span>Java</span>
-                            <span>JavaFX</span>
-                            <span>IntelliJ</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/Mrcoderv/JavaFXprojects/blob/main/JAVAFXExample/src/main/java/org/example/javafxdemo/GuessGame.java" target="_blank" class="btn small-btn"><i class="fab fa-github"></i> GitHub</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="project-image">
-                        <img src="assets/Project3.jpg" alt="Tourist Management System">
-                    </div>
-                    <div class="project-info">
-                        <h3>Tourist Management System</h3>
-                        <p>Developed a command-line application using C to manage tourist data, demonstrating understanding of data structures, algorithms, and functional programming.</p>
-                        <div class="project-tech">
-                            <span>C</span>
-                            <span>Data Structures</span>
-                            <span>Algorithms</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/Mrcoderv/touristmanagementsystem" target="_blank" class="btn small-btn"><i class="fab fa-github"></i> GitHub</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card" data-aos="fade-up" data-aos-delay="400">
-                    <div class="project-image">
-                        <img src="assets/Project4.jpg" alt="Time Displaying Website">
-                    </div>
-                    <div class="project-info">
-                        <h3>Time Displaying and Date converting Website.</h3>
-                        <p>Created a front-end web application using HTML, CSS, and JavaScript to display the current time dynamically. also with date converting feature. BS to Ad , AD to Bs .</p> <div class="project-tech">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://mrcoderv.github.io/displaytime/" target="_blank" class="btn small-btn"><i class="fas fa-eye"></i> Live Demo</a>
-                            <a href="https://github.com/Mrcoderv/displaytime" target="_blank" class="btn small-btn"><i class="fab fa-github"></i> GitHub</a>
-                        </div>
-                    </div>
-                </div>
+            
+            <div class="projects-filter" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="java">Java</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="data">Data</button>
             </div>
-        </section>
+            
+            <div class="projects-grid" id="projects-container">
+                <!-- Projects will be loaded dynamically from JS -->
+            </div>
+        </div>
+    </section>
 
     <!-- Education Section -->
-<section id="education" class="education">
-    <div class="section-header" data-aos="fade-up">
-        <h2>Education</h2>
-        <div class="underline"></div>
-    </div>
-    <div class="education-timeline" data-aos="fade-up">
-        <div class="timeline-item" data-aos="fade-right" data-aos-delay="100">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-                <h3>Pokhara University</h3>
-                <p>School of Environmental Science and Management (SchEMS), Devkota Marg, Mid Baneshwor, Kathmandu</p>
-                <p class="timeline-date">2023 - Expected 2027</p>
-                <p>Bachelor of Computer Applications (BCA)</p>
-                <p style="background-color: #2a2a361f; font-weight: bold; display: inline-block; padding: 2px 8px;">Currently in 4th Semester</p>
+    <section id="education" class="education">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Education</h2>
+                <div class="underline"></div>
             </div>
+            
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-content">
+                        <span class="timeline-date">2022 - Present</span>
+                        <h3 class="timeline-title">Bachelor of Computer Applications (BCA)</h3>
+                        <div class="timeline-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Tribhuvan University, Nepal</span>
+                        </div>
+                        <p class="timeline-description">Currently pursuing a Bachelor's degree in Computer Applications with a focus on programming, software development, and data analysis. Maintaining a strong academic record with a GPA of 3.8/4.0.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-content">
+                        <span class="timeline-date">2020 - 2022</span>
+                        <h3 class="timeline-title">Higher Secondary Education (Science)</h3>
+                        <div class="timeline-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>National Examination Board, Nepal</span>
+                        </div>
+                        <p class="timeline-description">Completed higher secondary education with a focus on Physics, Chemistry, and Mathematics. Graduated with distinction, scoring 85% in the final examinations.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-content">
+                        <span class="timeline-date">2018 - 2020</span>
+                        <h3 class="timeline-title">Secondary Education</h3>
+                        <div class="timeline-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Secondary Education Board, Nepal</span>
+                        </div>
+                        <p class="timeline-description">Completed secondary education with a focus on Science and Mathematics. Graduated with an A grade, scoring 80% in the final examinations.</p>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="timeline-item" data-aos="fade-right" data-aos-delay="200">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-                <h3>National Examination Board (NEB)</h3>
-                <p>Siddhababa Secondary School, Tamghas, Gulmi</p>
-                <p class="timeline-date">2021 - 2023</p>
-                <p>+2 in Computer Science</p>
-            </div>
-        </div>
-    </div>
-</section>
+    </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="contact">
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
             <div class="section-header" data-aos="fade-up">
                 <h2>Contact Me</h2>
                 <div class="underline"></div>
             </div>
+            
             <div class="contact-container">
                 <div class="contact-info" data-aos="fade-right">
                     <h3>Get In Touch</h3>
-                    <p>Feel free to reach out to me for any questions or opportunities!</p>
+                    <p>Feel free to reach out to me for any questions, project inquiries, or collaboration opportunities. I'm always open to discussing new projects and ideas.</p>
                     
-                    <div class="contact-details">
-                        <div class="contact-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Kathmandu, Nepal</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
                             <i class="fas fa-envelope"></i>
-                            <div>
-                                <h4>Email</h4>
-                                <p>Raghavap.339@gmail.com</p>
-                            </div>
                         </div>
-                        <div class="contact-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <a href="mailto:Raghavap.339@gmail.com">Raghavap.339@gmail.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
                             <i class="fas fa-phone"></i>
-                            <div>
-                                <h4>Phone</h4>
-                                <p>+977 9866421276</p>
-                            </div>
                         </div>
-                        <div class="contact-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <a href="tel:+9779866421276">+977 9866421276</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
                             <i class="fab fa-whatsapp"></i>
-                            <div>
-                                <h4>WhatsApp</h4>
-                                <p>+977 9866412176</p>
-                            </div>
                         </div>
-                        <div class="contact-item" data-aos="fade-up" data-aos-delay="400">
-                            <i class="fab fa-linkedin"></i>
-                            <div>
-                                <h4>LinkedIn</h4>
-                                <p><a href="https://linkedin.com/in/raghav-vian-panthi" target="_blank">raghav-vian-panthi</a></p>
-                            </div>
+                        <div class="contact-details">
+                            <h4>WhatsApp</h4>
+                            <a href="https://wa.me/9779866412176">+977 9866412176</a>
                         </div>
                     </div>
                     
                     <div class="social-links">
-                        <a href="https://github.com/Mrcoderv" target="_blank" data-aos="zoom-in" data-aos-delay="100"><i class="fab fa-github"></i></a>
-                        <a href="https://linkedin.com/in/raghav-vian-panthi" target="_blank" data-aos="zoom-in" data-aos-delay="200"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://x.com/MrRaghavpanthi" target="_blank" data-aos="zoom-in" data-aos-delay="300">
-                            <i class="fab fa-x-twitter"></i>
-                          </a>                         
-                          
-                    <a href="https://www.instagram.com/raghavavian" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/Mrcoderv" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/raghav-panthi" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://twitter.com/MrRaghavpanthi" target="_blank" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://instagram.com/raghav_panthi" target="_blank" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
                     </div>
                 </div>
                 
-              
+                <div class="contact-form" data-aos="fade-left">
+                    <h3>Send Me a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" class="form-control" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="form-submit">Send Message</button>
+                        
+                        <div class="form-message"></div>
+                    </form>
+                </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Footer -->
-        <footer>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <h2>Raghav vian <span>Panthi</span></h2>
+                    Raghav<span> Panthi</span>
                 </div>
-                <div class="footer-links">
-                    <a href="#home">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#skills">Skills</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#education">Education</a>
-                    <a href="#contact">Contact</a>
-                </div>
+                
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="pages/cv.html">CV</a></li>
+                </ul>
+                
                 <div class="footer-social">
-                    <a href="https://github.com/Mrcoderv" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://linkedin.com/in/raghav-vian-panthi" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://x.com/MrRaghavpanthi" target="_blank"><i class="fab fa-x-twitter"></i></a>
-                    <a href="https://www.instagram.com/raghavavian" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/Mrcoderv" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/raghav-panthi" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://twitter.com/MrRaghavpanthi" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://instagram.com/raghav_panthi" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
                 </div>
+                
+                <p class="copyright">© 2025 Raghav Vian Panthi. All rights reserved.</p>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Raghav vian Panthi. All Rights Reserved.   </p>
-            </div>
-        </footer>
-    </div>
+        </div>
+    </footer>
 
-    <!-- Scripts -->
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-<script src="script.js"></script>
+    <!-- AOS Animation Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
 </body>
 </html>
