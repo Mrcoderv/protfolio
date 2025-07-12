@@ -1,5 +1,21 @@
 /* Base Styles */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+* {
+    box-sizing: border-box;
+}
+/* General layout spacing */
+.container {
+    padding-left: 20px;
+}
+/* Apply a small gap on the left side of main content */
+.projects,
+.section-header,
+.projects-grid,
+.project-card,
+.project-info {
+    padding-left: 20px; /* Adjust this value to control the gap size */
+}
+
 
 /* Reset default margins and ensure full width */
 body,footer {
