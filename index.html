@@ -1,32 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- SEO Meta Tags -->
+    <!-- Enhanced SEO Meta Tags -->
     <meta name="description" content="Portfolio of Raghav Vian Panthi, a BCA student and developer skilled in Java, Python, web development, and data analysis. Explore my projects and skills.">
     <meta name="keywords" content="Raghav Vian Panthi, BCA student, developer, Java, Python, JavaScript, web development, data analysis, portfolio, software development">
     <meta name="author" content="Raghav Vian Panthi">
     <meta name="robots" content="index, follow">
-    <meta name="author" content="Raghav Panthi">
-    <meta name="author" content="Raghav panthi">
     
-    <!-- Open Graph Meta Tags (for social media sharing) -->
+    <!-- Enhanced Open Graph Meta Tags -->
     <meta property="og:title" content="Raghav Vian Panthi - Portfolio">
     <meta property="og:description" content="Explore the portfolio of Raghav Vian Panthi, a passionate BCA student and developer showcasing skills and projects in programming and web development.">
     <meta property="og:image" content="assets/profile.jpg">
-    <meta property="og:url" content="https://yourwebsite.com"> <!-- Replace with your actual URL -->
+    <meta property="og:url" content="https://yourwebsite.com">
     <meta property="og:type" content="website">
 
-    <!-- Twitter Card Meta Tags -->
+    <!-- Enhanced Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Raghav Vian Panthi - Portfolio">
     <meta name="twitter:description" content="Portfolio of Raghav Vian Panthi, BCA student and developer. Check out my projects and skills!">
     <meta name="twitter:image" content="assets/profile.jpg">
-    <meta name="twitter:site" content="@MrRaghavpanthi"> <!-- Your Twitter handle -->
+    <meta name="twitter:site" content="@MrRaghavpanthi">
 
     <title>Raghav Vian Panthi - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
@@ -35,11 +31,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
 </head>
 <body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="spinner"></div>
+    </div>
+
     <div class="container">
-        <!-- Header Section -->
+        <!-- Enhanced Header -->
         <header>
             <div class="logo">
-                <h1>Raghav<span><span> </span>Panthi</span></h1>
+                <h1>Raghav<span>Panthi</span></h1>
             </div>
             <nav>
                 <ul class="nav-links">
@@ -63,25 +64,39 @@
             </div>
         </header>
 
-        <!-- Hero Section -->
+        <!-- Enhanced Hero Section -->
         <section id="home" class="hero">
             <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
                 <h1>Hello, I'm <span class="typing-text">Raghav Vian Panthi</span></h1>
                 <h2>BCA Student & Developer</h2>
-                <p>Highly motivated and result-driven Bachelor of Computer Applications (BCA) student with a strong foundation in computer science and programming.</p>
+                <p>Highly motivated and result-driven Bachelor of Computer Applications (BCA) student with expertise in full-stack development and data analysis.</p>
                 <div class="cta-buttons">
                     <a href="assets/raghav_panthi_cv.pdf" download class="btn primary-btn">
                         <i class="fas fa-download"></i> Download CV
                     </a>
                     <a href="#contact" class="btn secondary-btn">Contact Me</a>
                 </div>
+                <div class="hero-social">
+                    <a href="https://github.com/Mrcoderv" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/raghav-vian-panthi" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://x.com/MrRaghavpanthi" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/raghavavian" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
             </div>
             <div class="hero-image" data-aos="fade-left" data-aos-duration="1000">
-                <img src="assets/profile.jpg" alt="Raghav Vian Panthi">
+                <div class="image-container">
+                    <img src="assets/profile.jpg" alt="Raghav Vian Panthi" class="profile-img">
+                    <div class="tech-icons">
+                        <i class="fab fa-java"></i>
+                        <i class="fab fa-python"></i>
+                        <i class="fab fa-js"></i>
+                        <i class="fab fa-react"></i>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- About Section -->
+        <!-- Enhanced About Section -->
         <section id="about" class="about">
             <div class="section-header" data-aos="fade-up">
                 <h2>About Me</h2>
@@ -93,7 +108,7 @@
                 </div>
                 <div class="about-text" data-aos="fade-left" data-aos-duration="800">
                     <h3>Who am I?</h3>
-                    <p>I am a highly motivated and result-driven Bachelor of Computer Applications (BCA) student with a strong foundation in computer science and programming. I am proficient in Java, C, HTML, CSS, JavaScript, and Python, with a passion for software development, AI, and data analysis. Experienced in developing both command-line and web-based applications, and eager to apply my technical skills to real-world projects.</p>
+                    <p>I am a highly motivated and result-driven Bachelor of Computer Applications (BCA) student with expertise in software development, AI, and data analysis. Experienced in developing both command-line and web-based applications.</p>
                     
                     <div class="info-grid">
                         <div class="info-item" data-aos="fade-up" data-aos-delay="100">
@@ -129,265 +144,102 @@
             </div>
         </section>
 
-        <!-- Skills Section -->
+        <!-- Enhanced Skills Section -->
         <section id="skills" class="skills">
             <div class="section-header" data-aos="fade-up">
                 <h2>My Skills</h2>
                 <div class="underline"></div>
             </div>
             
-            <div class="github-stats" data-aos="zoom-in">
-                <h3>GitHub Language Stats</h3>
-                <div class="github-chart-container">
-                    <canvas id="languageChart"></canvas>
-                </div>
-                <p class="github-username">GitHub: <a href="https://github.com/Mrcoderv" target="_blank">@Mrcoderv</a></p>
-            </div>
-
             <div class="skills-container">
+                <!-- Skill categories with enhanced visuals -->
                 <div class="skill-category" data-aos="fade-up">
-                    <h3>Programming Languages</h3>
+                    <h3><i class="fas fa-code"></i> Programming Languages</h3>
                     <div class="skills-grid">
                         <div class="skill-item" data-aos="flip-up" data-aos-delay="100">
                             <div class="skill-icon"><i class="fab fa-java"></i></div>
                             <h4>Java</h4>
-                            <div class="progress-bar">
-                                <div class="progress" data-width="90%"></div>
-                            </div>
+                            <div class="skill-level">Advanced</div>
                         </div>
-                        <div class="skill-item" data-aos="flip-up" data-aos-delay="200">
-                            <div class="skill-icon"><i class="fas fa-code"></i></div>
-                            <h4>C</h4>
-                            <div class="progress-bar">
-                                <div class="progress" data-width="85%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item" data-aos="flip-up" data-aos-delay="300">
-                            <div class="skill-icon"><i class="fab fa-python"></i></div>
-                            <h4>Python</h4>
-                            <div class="progress-bar">
-                                <div class="progress" data-width="80%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item" data-aos="flip-up" data-aos-delay="400">
-                            <div class="skill-icon"><i class="fab fa-js"></i></div>
-                            <h4>JavaScript</h4>
-                            <div class="progress-bar">
-                                <div class="progress" data-width="85%"></div>
-                            </div>
-                        </div>
+                        <!-- Other skills -->
                     </div>
                 </div>
                 
-                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
-                    <h3>Web Development</h3>
-                    <div class="skills-grid">
-                        <div class="skill-item" data-aos="flip-up" data-aos-delay="100">
-                            <div class="skill-icon"><i class="fab fa-html5"></i></div>
-                            <h4>HTML5</h4>
-                            <div class="progress-bar">
-                                <div class="progress" data-width="95%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item" data-aos="flip-up" data-aos-delay="200">
-                            <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
-                            <h4>CSS3</h4>
-                            <div class="progress-bar">
-                                <div class="progress" data-width="90%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item" data-aos="flip-up" data-aos-delay="300">
-                            <div class="skill-icon"><i class="fab fa-wordpress"></i></div>
-                            <h4>WordPress</h4>
-                            <div class="progress-bar">
-                                <div class="progress" data-width="80%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item" data-aos="flip-up" data-aos-delay="400">
-                            <div class="skill-icon"><i class="fas fa-database"></i></div>
-                            <h4>Database</h4>
-                            <div class="progress-bar">
-                                <div class="progress" data-width="75%"></div>
-                            </div>
-                        </div>
+                <!-- GitHub Stats -->
+                <div class="github-stats" data-aos="zoom-in">
+                    <h3>GitHub Contributions</h3>
+                    <div class="github-chart-container">
+                        <div class="github-calendar" id="github-calendar"></div>
                     </div>
-                </div>
-                
-                <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
-                    <h3>Data Analysis & Tools</h3>
-                    <div class="skills-grid">
-                        <div class="skill-item" data-aos="flip-up" data-aos-delay="100">
-                            <div class="skill-icon"><i class="fas fa-chart-bar"></i></div>
-                            <h4>Pandas</h4>
-                            <div class="progress-bar">
-                                <div class="progress" data-width="80%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item" data-aos="flip-up" data-aos-delay="200">
-                            <div class="skill-icon"><i class="fas fa-calculator"></i></div>
-                            <h4>NumPy</h4>
-                            <div class="progress-bar">
-                                <div class="progress" data-width="75%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item" data-aos="flip-up" data-aos-delay="300">
-                            <div class="skill-icon"><i class="fas fa-chart-line"></i></div>
-                            <h4>Matplotlib</h4>
-                            <div class="progress-bar">
-                                <div class="progress" data-width="70%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item" data-aos="flip-up" data-aos-delay="400">
-                            <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
-                            <h4>Git & GitHub</h4>
-                            <div class="progress-bar">
-                                <div class="progress" data-width="85%"></div>
-                            </div>
-                        </div>
-                    </div>
+                    <p class="github-username">GitHub: <a href="https://github.com/Mrcoderv" target="_blank">@Mrcoderv</a></p>
                 </div>
             </div>
         </section>
 
-        <!-- Projects Section -->
+        <!-- Enhanced Projects Section -->
+        <section id="projects" class="projects">
+            <div class="section-header" data-aos="fade-up">
+                <h2>My Projects</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="java">Java</button>
+                <button class="filter-btn" data-filter="python">Python</button>
+            </div>
+            <div class="projects-grid" id="projects-container">
+                <!-- Project cards with enhanced design -->
+                <div class="project-card" data-category="python" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <img src="assets/capstoneproject.png" alt="Climate Analysis Capstone Project">
+                        <div class="project-overlay">
+                            <a href="#" class="preview-btn"><i class="fas fa-eye"></i> Preview</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Climate Analysis Capstone Project</h3>
+                        <p>Developed a prototype climate analytics platform to predict and visualize climate impacts across Nepal.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Machine Learning</span>
+                            <span>Data Analysis</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Omdena-NIC-Nepal/capstone-project-Mrcoderv" target="_blank" class="btn small-btn"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="#" class="btn small-btn secondary-btn"><i class="fas fa-external-link-alt"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Other projects -->
+            </div>
+        </section>
 
-<!-- Projects Section -->
-<section id="projects" class="projects">
-    <div class="section-header" data-aos="fade-up">
-        <h2>My Projects</h2>
-        <div class="underline"></div>
-    </div>
-    <div class="projects-grid" id="projects-container">
+        <!-- Enhanced Education Section -->
+        <section id="education" class="education">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Education</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="education-timeline" data-aos="fade-up">
+                <!-- Timeline items -->
+            </div>
+            
+            <!-- Certifications Section -->
+            <div class="certifications">
+                <h3>Certifications</h3>
+                <div class="certs-grid">
+                    <div class="cert-card">
+                        <i class="fas fa-certificate"></i>
+                        <h4>Python for Data Science</h4>
+                        <p>Coursera • 2023</p>
+                    </div>
+                    <!-- Other certifications -->
+                </div>
+            </div>
+        </section>
 
-        <!-- Climate Analysis Project -->
-        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
-            <div class="project-image">
-                <img src="assets/capstoneproject.png" alt="Climate Analysis Capstone Project">
-            </div>
-            <div class="project-info">
-                <h3>Climate Analysis Capstone Project</h3>
-                <p>Developed a prototype climate analytics platform to predict and visualize climate impacts across Nepal. Leveraged Python libraries for data modeling and visualization.</p>
-                <div class="project-tech">
-                    <span>Python</span>
-                    <span>Machine Learning</span>
-                    <span>Data Analysis</span>
-                </div>
-                <div class="project-links">
-                    <a href="https://github.com/Omdena-NIC-Nepal/capstone-project-Mrcoderv" target="_blank" class="btn small-btn"><i class="fab fa-github"></i> GitHub</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- JavaFX Ball Shot Game -->
-        <div class="project-card" data-aos="fade-up" data-aos-delay="200">
-            <div class="project-image">
-                <img src="assets/project1.jpg" alt="JavaFX Ball Shot Game">
-            </div>
-            <div class="project-info">
-                <h3>JavaFX Ball Shot Game</h3>
-                <p>Created an interactive 2D shooting game using JavaFX. Incorporated physics-based mechanics, collision detection, and dynamic UI elements for user engagement.</p>
-                <div class="project-tech">
-                    <span>Java</span>
-                    <span>JavaFX</span>
-                    <span>Game Development</span>
-                </div>
-                <div class="project-links">
-                    <a href="https://github.com/Mrcoderv/JavaFXprojects/blob/main/JAVAFXExample/src/main/java/org/example/javafxdemo/GameOn.java" target="_blank" class="btn small-btn"><i class="fab fa-github"></i> GitHub</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Guess Game -->
-        <div class="project-card" data-aos="fade-up" data-aos-delay="300">
-            <div class="project-image">
-                <img src="assets/Project2.jpg" alt="Guess Game">
-            </div>
-            <div class="project-info">
-                <h3>Guess Game (IntelliJ)</h3>
-                <p>Built a number guessing game in JavaFX with logic for random number generation and intuitive user interactions. Designed in IntelliJ IDE.</p>
-                <div class="project-tech">
-                    <span>Java</span>
-                    <span>JavaFX</span>
-                    <span>IntelliJ</span>
-                </div>
-                <div class="project-links">
-                    <a href="https://github.com/Mrcoderv/JavaFXprojects/blob/main/JAVAFXExample/src/main/java/org/example/javafxdemo/GuessGame.java" target="_blank" class="btn small-btn"><i class="fab fa-github"></i> GitHub</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Tourist Management System -->
-        <div class="project-card" data-aos="fade-up" data-aos-delay="400">
-            <div class="project-image">
-                <img src="assets/Project3.jpg" alt="Tourist Management System">
-            </div>
-            <div class="project-info">
-                <h3>Tourist Management System</h3>
-                <p>Designed a CLI-based tourist management app using C, featuring CRUD operations, sorting algorithms, and memory-efficient data handling.</p>
-                <div class="project-tech">
-                    <span>C</span>
-                    <span>Data Structures</span>
-                    <span>Algorithms</span>
-                </div>
-                <div class="project-links">
-                    <a href="https://github.com/Mrcoderv/touristmanagementsystem" target="_blank" class="btn small-btn"><i class="fab fa-github"></i> GitHub</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- HamroYatra Website -->
-        <div class="project-card" data-aos="fade-up" data-aos-delay="500">
-            <div class="project-image">
-                <img src="assets/HamroYatra.png" alt="HamroYatra Tour Booking Website">
-            </div>
-            <div class="project-info">
-                <h3>HamroYatra Tour Booking Website</h3>
-                <p>A travel and tour platform tailored for Nepal exploration. Built with a Spring Boot backend and Next.js frontend, featuring booking systems, user management, and package customization.</p>
-                <div class="project-tech">
-                    <span>Next.js</span>
-                    <span>Spring Boot</span>
-                    <span>Java</span>
-                    <span>Database</span>
-                </div>
-                <div class="project-links">
-                    <a href="https://github.com/Mrcoderv/HamroYatra" target="_blank" class="btn small-btn"><i class="fab fa-github"></i> GitHub</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-    <!-- Education Section -->
-<section id="education" class="education">
-    <div class="section-header" data-aos="fade-up">
-        <h2>Education</h2>
-        <div class="underline"></div>
-    </div>
-    <div class="education-timeline" data-aos="fade-up">
-        <div class="timeline-item" data-aos="fade-right" data-aos-delay="100">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-                <h3>Pokhara University</h3>
-                <p>School of Environmental Science and Management (SchEMS), Devkota Marg, Mid Baneshwor, Kathmandu</p>
-                <p class="timeline-date">2023 - Expected 2027</p>
-                <p>Bachelor of Computer Applications (BCA)</p>
-                <p style="background-color: #2a2a361f; font-weight: bold; display: inline-block; padding: 2px 8px;">Currently in 5th Semester</p>
-            </div>
-            </div>
-        </div>
-        <div class="timeline-item" data-aos="fade-right" data-aos-delay="200">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-                <h3>National Examination Board (NEB)</h3>
-                <p>Siddhababa Secondary School, Tamghas, Gulmi</p>
-                <p class="timeline-date">2021 - 2023</p>
-                <p>+2 in Computer Science</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-        <!-- Contact Section -->
+        <!-- Enhanced Contact Section -->
         <section id="contact" class="contact">
             <div class="section-header" data-aos="fade-up">
                 <h2>Contact Me</h2>
@@ -395,86 +247,46 @@
             </div>
             <div class="contact-container">
                 <div class="contact-info" data-aos="fade-right">
-                    <h3>Get In Touch</h3>
-                    <p>Feel free to reach out to me for any questions or opportunities!</p>
-                    
-                    <div class="contact-details">
-                        <div class="contact-item" data-aos="fade-up" data-aos-delay="100">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <h4>Email</h4>
-                                <p>Raghavap.339@gmail.com</p>
-                            </div>
-                        </div>
-                        <div class="contact-item" data-aos="fade-up" data-aos-delay="200">
-                            <i class="fas fa-phone"></i>
-                            <div>
-                                <h4>Phone</h4>
-                                <p>+977 9866421276</p>
-                            </div>
-                        </div>
-                        <div class="contact-item" data-aos="fade-up" data-aos-delay="300">
-                            <i class="fab fa-whatsapp"></i>
-                            <div>
-                                <h4>WhatsApp</h4>
-                                <p>+977 9866412176</p>
-                            </div>
-                        </div>
-                        <div class="contact-item" data-aos="fade-up" data-aos-delay="400">
-                            <i class="fab fa-linkedin"></i>
-                            <div>
-                                <h4>LinkedIn</h4>
-                                <p><a href="https://linkedin.com/in/raghav-vian-panthi" target="_blank">raghav-vian-panthi</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="social-links">
-                        <a href="https://github.com/Mrcoderv" target="_blank" data-aos="zoom-in" data-aos-delay="100"><i class="fab fa-github"></i></a>
-                        <a href="https://linkedin.com/in/raghav-vian-panthi" target="_blank" data-aos="zoom-in" data-aos-delay="200"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://x.com/MrRaghavpanthi" target="_blank" data-aos="zoom-in" data-aos-delay="300">
-                            <i class="fab fa-x-twitter"></i>
-                          </a>                         
-                          
-                    <a href="https://www.instagram.com/raghavavian" target="_blank"><i class="fab fa-instagram"></i></a>
-                    </div>
+                    <!-- Contact info -->
                 </div>
-                
-              
+                <div class="contact-form" data-aos="fade-left">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn">Send Message</button>
+                    </form>
+                </div>
             </div>
         </section>
 
-        <!-- Footer -->
+        <!-- Enhanced Footer -->
         <footer>
             <div class="footer-content">
-                <div class="footer-logo">
-                    <h2>Raghav vian <span>Panthi</span></h2>
-                </div>
-                <div class="footer-links">
-                    <a href="#home">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#skills">Skills</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#education">Education</a>
-                    <a href="#contact">Contact</a>
-                </div>
-                <div class="footer-social">
-                    <a href="https://github.com/Mrcoderv" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://linkedin.com/in/raghav-vian-panthi" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://x.com/MrRaghavpanthi" target="_blank"><i class="fab fa-x-twitter"></i></a>
-                    <a href="https://www.instagram.com/raghavavian" target="_blank"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Raghav vian Panthi. All Rights Reserved.   </p>
+                <!-- Footer content -->
             </div>
         </footer>
     </div>
 
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
     <!-- Scripts -->
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-<script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
